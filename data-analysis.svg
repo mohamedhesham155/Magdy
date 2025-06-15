@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+    <!-- Background Grid -->
+    <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(74, 158, 255, 0.1)" stroke-width="1"/>
+        </pattern>
+    </defs>
+    <rect width="800" height="600" fill="url(#grid)"/>
+
+    <!-- Main Circle -->
+    <circle cx="400" cy="300" r="150" fill="none" stroke="#4a9eff" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Data Points -->
+    <g id="data-points">
+        <circle cx="300" cy="250" r="8" fill="#4a9eff"/>
+        <circle cx="450" cy="200" r="8" fill="#4a9eff"/>
+        <circle cx="500" cy="350" r="8" fill="#4a9eff"/>
+        <circle cx="350" cy="400" r="8" fill="#4a9eff"/>
+        <circle cx="400" cy="300" r="8" fill="#4a9eff"/>
+    </g>
+
+    <!-- Connecting Lines -->
+    <g id="connections" stroke="#4a9eff" stroke-width="2" opacity="0.5">
+        <line x1="300" y1="250" x2="450" y2="200"/>
+        <line x1="450" y1="200" x2="500" y2="350"/>
+        <line x1="500" y1="350" x2="350" y2="400"/>
+        <line x1="350" y1="400" x2="300" y2="250"/>
+        <line x1="400" y1="300" x2="300" y2="250"/>
+        <line x1="400" y1="300" x2="450" y2="200"/>
+        <line x1="400" y1="300" x2="500" y2="350"/>
+        <line x1="400" y1="300" x2="350" y2="400"/>
+    </g>
+
+    <!-- Decorative Elements -->
+    <g id="decorative-circles">
+        <circle cx="400" cy="300" r="180" fill="none" stroke="#6eb6ff" stroke-width="1" opacity="0.2"/>
+        <circle cx="400" cy="300" r="220" fill="none" stroke="#6eb6ff" stroke-width="1" opacity="0.1"/>
+    </g>
+
+    <!-- Pulse Animation -->
+    <circle cx="400" cy="300" r="150" fill="none" stroke="#4a9eff" stroke-width="2" opacity="0.2">
+        <animate attributeName="r" values="150;170;150" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0.1;0.2" dur="4s" repeatCount="indefinite"/>
+    </circle>
+</svg>
